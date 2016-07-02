@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photos</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/movie.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="htmlMaker.js"></script>
+    <script src="movies.js"></script>
+    <script src="movie.js"></script>
+</head>
+<body>
+<div id="main" class="container-fluid">
+    <div id="header" class="container-fluid">
+        <div class="row">
+            <div class="col-md-1">
+                <img src="images/movie.png" width="100px" height="100px">
+            </div>
+            <div class="col-md-4">
+                <h1> Rent A Movie</h1>
+            </div>
+            <div id="search" class="col-md-7">
+                <input class="text" id="field" type="text">
+                <button id="search_button"> Search </button>
+                <div id="suggestions_box" class="suggestions">
+
+                </div>
+
+                </div>
+            </div>
+        </div>
+<div class="icons">
+    <select id="combo_box">
+        <option>title</option>
+        <option>year</option>
+    </select>
+    <img id="list_icon" title="list" src="data/list.jpg">
+    <img id="grid_icon" title="grid" src="data/grid_pressed.jpg">
+</div>
+<div id="movies" class="grid">
+</div>
+    </div>
+</body>
+</html>

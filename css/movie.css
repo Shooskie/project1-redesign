@@ -1,0 +1,182 @@
+img {
+    padding: 0;
+}
+#header {
+    background-color: gray;
+    color: black;
+}
+h1{
+    margin-top: .85em;
+    margin-left: 1em;
+}
+input.text{
+    color:gray;
+    border-width:1px;
+    border-color: blue;
+    border-style: solid;
+    width: 150px;
+    margin-left: 50px;
+
+}
+div.suggestions{
+    position:absolute;
+    top:25px;
+    z-index:50;
+    border-color:lightgray;
+    background-color:white;
+    border-style:solid;
+    border-width: 1px;
+    width:150px;
+    overflow:auto;
+    display:none;
+}
+div.sub_suggestions{
+    width:150px;
+}
+div.sub_suggestions:hover{
+    background-color:gainsboro;
+}
+#search_button {
+    border-color: blue;
+    background-color: blue;
+    color: white;
+    margin-left: -5px;
+}
+#search{
+    margin-top: 2.5em;
+}
+.starring {
+    visibility: hidden;
+    display: none;
+}
+.icons{
+    position:relative;
+    top:10px;
+    height:40px;
+}
+
+.icons img{
+    float:right;
+}
+
+.icons img:hover{
+    cursor:pointer;
+}
+
+.grid {
+    position:relative;
+}
+
+.grid .movies{
+    position:relative;
+    float:left;
+    width: 162px;
+    height: 162px;
+    margin:10px;
+}
+
+
+
+.grid .movies img , .list .movies img{
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: white;
+    padding: 5px;
+    border:1px solid lightgray;
+    width: 150px;
+    height: 150px;
+}
+
+.grid .title {
+    position:absolute;
+    left:6px;
+    bottom:17px;
+    height:35px;
+    width:138px;
+    background-color:rgba(0,0,0,0.3);
+    color:white;
+    line-height: 35px;
+    text-align: center;
+}
+.grid .description {
+    display:none;
+}
+.grid .date{
+    display:none;
+    background-color:yellow;
+}
+
+.list {
+    position:relative;
+}
+
+.list .movies{
+    position:relative;
+    display:block;
+    width:70%;
+    height:170px;
+    padding:10px;
+    border-bottom:lightgray 1px dotted;
+}
+
+.list div.description, .list .year  .list .starring  .list .title{
+    position:absolute;
+    top:10px;
+    color: black;
+    left:250px;
+    font-size:25px;
+}
+
+.list .date{
+    top:100px;
+    color:gray;
+    font-size:15px;
+}
+
+
+.list div.movies {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.list .movies .description{
+    font-size: 12px;
+}
+.list .year{
+    display: block;
+    visibility: visible;
+}
+
+input.text{
+    color:gray;
+    border-width:1px;
+    border-color: lightgray;
+    border-style: solid;
+    width: 150px;
+}
+
+div.suggestions{
+    position:absolute;
+    top:25px;
+    z-index:50;
+    border-color:lightgray;
+    background-color:white;
+    border-style:solid;
+    border-width: 1px;
+    width:150px;
+    overflow:auto;
+    display:none;
+}
+
+div.sub_suggestions{
+    width:150px;
+}
+
+div.sub_suggestions:hover{
+    background-color:gainsboro;
+}
+
+#main {
+    padding: 0;
+}
