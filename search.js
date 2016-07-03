@@ -45,7 +45,7 @@ function search() {
         $("#suggestions_box").html(html);
         //get the children of suggestions_box with .sub_suggestions class
         $("#suggestions_box").children(".sub_suggestions").on('click',function(){
-            var item=$(this).title; //get the data
+            var item=$(this).attr('data-item'); //get the data
             $("#field").val(item); //show it in the field
             $("#suggestions_box").hide(); //hide the suggestion box
         });
