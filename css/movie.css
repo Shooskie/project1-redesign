@@ -15,8 +15,6 @@ input.text{
     border-color: blue;
     border-style: solid;
     width: 150px;
-    margin-left: 50px;
-
 }
 div.suggestions{
     position:absolute;
