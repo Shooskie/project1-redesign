@@ -135,12 +135,15 @@ div.sub_suggestions:hover{
     float: right;
 }
 .list div.description {
-    background-color: lightblue;
+    width: 450px;
+    background-color: rgb(236, 255, 255);
     border: solid;
     margin: 10px;
+    line-height: 1.5;
+    border-width: 0.25px;
     border-color: lightgray;
     position:relative;
-    top:17px;
+    top:30px;
     color: black;
     left:0px;
     font-size:15px;
@@ -170,10 +173,6 @@ div.sub_suggestions:hover{
 .list .movies .description{
     font-size: 12px;
 }
-.list .year{
-    display: block;
-    visibility: visible;
-}
 
 input.text{
     color:gray;
@@ -182,7 +181,6 @@ input.text{
     border-style: solid;
     width: 150px;
 }
-
 div.suggestions{
     position:absolute;
     top:25px;
@@ -203,11 +201,37 @@ div.sub_suggestions{
 div.sub_suggestions:hover{
     background-color:gainsboro;
 }
-
+.list .movies img{
+    width: 220px;
+    height:220px;
+    padding:5px;
+}
 #main {
     padding: 0;
 }
+.list .title .year{
+    color: grey;
+    font-size: 15px;
+}
 .list .title .titlemovie{
-    font-size: larger;
+    font-size: 18px;
     font-weight: 500;
+}
+.list .movies{
+    height: 260px;
+}
+
+.list .rating {
+    position: absolute;
+    margin-left: 10px;
+    top:75px;
+}
+
+.list span{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.list .title .titlemovie{
+    display: inline-block;
 }
