@@ -37,19 +37,16 @@ function search() {
             show=true; //show suggestions
         }
     });
-    if(show){
+        if(show){
         $("#suggestions_box").html(html);
         //get the children of suggestions_box with .sub_suggestions class
         $("#suggestions_box").children(".sub_suggestions").on('click',function(){
-            var item=$(this).attr('data-item'); //get the data
+            var item=$(this).title; //get the data
             $("#field").val(item); //show it in the field
             $("#suggestions_box").hide(); //hide the suggestion box
         });
-
         $("#suggestions_box").show();
     }
     else
         $("#suggestions_box").hide();
-}/**
- * Created by MyShit on 7/2/16.
- */
+}
