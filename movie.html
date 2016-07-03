@@ -1,8 +1,12 @@
 <div class='movies'>
-    <img src='{{photo}}'>
-    <div class="title">{{title}}</div>
-    <div class="starring">{{starring}}</div>
-    <div class='description'>{{description}}</div>
-    <div class='year'>{{year}}</div>
+    <img id="photo" src='{{photo}}'>
+    <div class="info">
+        <div class="title">
+            <div class="titlemovie">{{title}}</div>
+            <div class='year'> ({{year}})</div>
+        </div>
+        <div class="starring">starring: {{starring}}</div>
+        <div class='description'>{{description}}</div>
+    </div>
 </div>
 

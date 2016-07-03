@@ -2,7 +2,7 @@ img {
     padding: 0;
 }
 #header {
-    background-color: gray;
+    background-color: lightgray;
     color: black;
 }
 h1{
@@ -45,7 +45,7 @@ div.sub_suggestions:hover{
 #search{
     margin-top: 2.5em;
 }
-.starring {
+.grid .starring {
     visibility: hidden;
     display: none;
 }
@@ -92,21 +92,32 @@ div.sub_suggestions:hover{
     position:absolute;
     left:6px;
     bottom:17px;
-    height:35px;
+    height:40px;
     width:138px;
     background-color:rgba(0,0,0,0.3);
     color:white;
-    line-height: 35px;
+    line-height: 20px;
     text-align: center;
 }
 .grid .description {
     display:none;
 }
-.grid .date{
-    display:none;
-    background-color:yellow;
+.grid:hover .grid .title {
+    bottom: 90px;
+    height: 70px;
 }
 
+.grid:hover  .grid .starring {
+    color: white;
+    display: block;
+    background-color: rgba(0,0,0,0);
+    visibility: visible;
+    position:absolute;
+    left:6px;
+    bottom:17px;
+    height:40px;
+    width:138px;
+}
 .list {
     position:relative;
 }
@@ -119,22 +130,38 @@ div.sub_suggestions:hover{
     padding:10px;
     border-bottom:lightgray 1px dotted;
 }
-
-.list div.description, .list .year  .list .starring  .list .title{
-    position:absolute;
-    top:10px;
-    color: black;
-    left:250px;
-    font-size:25px;
+.list .info {
+    padding-left: 140px;
+    float: right;
 }
-
-.list .date{
-    top:100px;
-    color:gray;
+.list div.description {
+    background-color: lightblue;
+    border: solid;
+    margin: 10px;
+    border-color: lightgray;
+    position:relative;
+    top:17px;
+    color: black;
+    left:0px;
     font-size:15px;
 }
 
+.list .starring{
+    margin-left: 10px;
+    position: absolute;
+    display: block;
+    visibility: visible;
+}
+.list .title {
+    margin-left: 10px;
+    font-size:15px;
+    top:10px;
+    color: black;
+    display: block;
+    visibility: visible;
 
+
+}
 .list div.movies {
     font-size: 12px;
     margin-bottom: 30px;
@@ -179,4 +206,8 @@ div.sub_suggestions:hover{
 
 #main {
     padding: 0;
+}
+.list .title .titlemovie{
+    font-size: larger;
+    font-weight: 500;
 }
