@@ -46,7 +46,7 @@ function search() {
         //get the children of suggestions_box with .sub_suggestions class
         $("#suggestions_box").children(".sub_suggestions").on('click',function(){
             var item=$(this).attr('data-item'); //get the data
-            $("#field").val(item); //show it in the field
+            $("#field").val(movies_arr[item].title); //show it in the field
             $("#suggestions_box").hide(); //hide the suggestion box
         });
         $("#suggestions_box").show();
